@@ -80,7 +80,7 @@ platform :ios do
       path: "#{GITHUB_WORKSPACE}/GlucoseDirect.xcodeproj",
       profile_name: mapping["com.#{TEAMID}.libre-direct"],
       code_sign_identity: "iPhone Distribution",
-      targets: ["GDApp1"]
+      targets: ["GDApp"]
     )
 
 
