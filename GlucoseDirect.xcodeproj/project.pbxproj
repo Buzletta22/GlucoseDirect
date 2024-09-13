@@ -926,12 +926,12 @@
 			dependencies = (
 				E244744A2859CA9700F8891C /* PBXTargetDependency */,
 			);
-			name = GlucoseDirectApp;
+			name = GDApp;
 			packageProductDependencies = (
 				101B53842A3BC0210088B4BD /* GRDB */,
 			);
 			productName = GlucoseDirect;
-			productReference = E20B853A266F4A9800AA4224 /* GlucoseDirectApp.app */;
+			productReference = E20B853A266F4A9800AA4224 /* GDApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		E244743F2859CA9600F8891C /* GlucoseDirectWidget */ = {
