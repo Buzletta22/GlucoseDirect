@@ -914,7 +914,7 @@
 /* Begin PBXNativeTarget section */
 		E20B8539266F4A9800AA4224 /* GlucoseDirectApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E20B8549266F4A9900AA4224 /* Build configuration list for PBXNativeTarget "GlucoseDirectApp" */;
+			buildConfigurationList = E20B8549266F4A9900AA4224 /* Build configuration list for PBXNativeTarget "GDApp" */;
 			buildPhases = (
 				E20B8536266F4A9800AA4224 /* Sources */,
 				E20B8537266F4A9800AA4224 /* Frameworks */,
