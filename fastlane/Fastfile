@@ -87,7 +87,7 @@ platform :ios do
 
     
     update_code_signing_settings(
-      path: "{GITHUB_WORKSPACE}/GlucoseDirect.xcodeproj",
+      path: "#{GITHUB_WORKSPACE}/GlucoseDirect.xcodeproj",
       profile_name: mapping["com.#{TEAMID}.libre-direct.Widgets"],
       code_sign_identity: "iPhone Distribution",
       targets: ["GlucoseDirectWidget"]
