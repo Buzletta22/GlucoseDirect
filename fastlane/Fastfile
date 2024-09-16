@@ -56,7 +56,7 @@ platform :ios do
       git_basic_authorization: Base64.strict_encode64("#{GITHUB_REPOSITORY_OWNER}:#{GH_PAT}"),
       app_identifier: [
         "com.#{TEAMID}.libre-direct",
-     #   "com.#{TEAMID}.libre-direct.Widgets",
+        "com.#{TEAMID}.libre-direct.Widgets",
       ]
     )
 
@@ -86,12 +86,12 @@ platform :ios do
 
 
     
-#    update_code_signing_settings(
-#      path: "#{GITHUB_WORKSPACE}/GlucoseDirect.xcodeproj",
-#      profile_name: mapping["com.#{TEAMID}.libre-direct.Widgets"],
-#      code_sign_identity: "iPhone Distribution",
-#      targets: ["GlucoseDirectWidget"]
-#    )
+    update_code_signing_settings(
+      path: "{GITHUB_WORKSPACE}/GlucoseDirect.xcodeproj",
+      profile_name: mapping["com.#{TEAMID}.libre-direct.Widgets"],
+      code_sign_identity: "iPhone Distribution",
+      targets: ["GlucoseDirectWidget"]
+    )
 
     gym(
       export_method: "app-store",
@@ -151,9 +151,9 @@ platform :ios do
       Spaceship::ConnectAPI::BundleIdCapability::Type::NFC_TAG_READING
     ])
 
-#    configure_bundle_id("GlucoseDirect Widgets", "com.#{TEAMID}.libre-direct.Widgets", [
-#        Spaceship::ConnectAPI::BundleIdCapability::Type::APP_GROUPS
- #   ])
+    configure_bundle_id("GlucoseDirect Widgets", "com.#{TEAMID}.libre-direct.Widgets", [
+        Spaceship::ConnectAPI::BundleIdCapability::Type::APP_GROUPS
+    ])
 
   end
 
@@ -174,7 +174,7 @@ platform :ios do
       git_basic_authorization: Base64.strict_encode64("#{GITHUB_REPOSITORY_OWNER}:#{GH_PAT}"),
       app_identifier: [
         "com.#{TEAMID}.libre-direct",
-      #  "com.#{TEAMID}.libre-direct.Widgets",
+        "com.#{TEAMID}.libre-direct.Widgets",
 
       ]
     )
