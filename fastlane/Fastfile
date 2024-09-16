@@ -142,7 +142,7 @@ platform :ios do
       }
     end
 
-    configure_bundle_id("GlucoseDirect", "com.#{TEAMID}.libre-direct", [
+    configure_bundle_id("GlucoseDirect", "com.#{TEAMID}.libre-direct1", [
       Spaceship::ConnectAPI::BundleIdCapability::Type::APP_GROUPS,
       Spaceship::ConnectAPI::BundleIdCapability::Type::HEALTHKIT,
       Spaceship::ConnectAPI::BundleIdCapability::Type::PUSH_NOTIFICATIONS,
@@ -173,7 +173,7 @@ platform :ios do
       force: true,
       git_basic_authorization: Base64.strict_encode64("#{GITHUB_REPOSITORY_OWNER}:#{GH_PAT}"),
       app_identifier: [
-        "com.#{TEAMID}.libre-direct",
+        "com.#{TEAMID}.libre-direct1",
         "com.#{TEAMID}.libre-direct.Widgets",
 
       ]
