@@ -40,7 +40,7 @@ platform :ios do
     )
 
     previous_build_number = latest_testflight_build_number(
-      app_identifier: "com.#{TEAMID}.libre-direct",
+      app_identifier: "com.#{TEAMID}.libre-direct1",
       api_key: api_key,
     )
 
@@ -55,13 +55,13 @@ platform :ios do
       type: "appstore",
       git_basic_authorization: Base64.strict_encode64("#{GITHUB_REPOSITORY_OWNER}:#{GH_PAT}"),
       app_identifier: [
-        "com.#{TEAMID}.libre-direct",
+        "com.#{TEAMID}.libre-direct1",
         "com.#{TEAMID}.libre-direct.Widgets",
       ]
     )
 
     previous_build_number = latest_testflight_build_number(
-      app_identifier: "com.#{TEAMID}.libre-direct",
+      app_identifier: "com.#{TEAMID}.libre-direct1",
       api_key: api_key,
     )
 
@@ -78,7 +78,7 @@ platform :ios do
 
     update_code_signing_settings(
       path: "#{GITHUB_WORKSPACE}/GlucoseDirect.xcodeproj",
-      profile_name: mapping["com.#{TEAMID}.libre-direct"],
+      profile_name: mapping["com.#{TEAMID}.libre-direct1"],
       code_sign_identity: "iPhone Distribution",
       targets: ["GlucoseDirectApp"]
     )
