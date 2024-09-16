@@ -40,7 +40,7 @@ platform :ios do
     )
 
     previous_build_number = latest_testflight_build_number(
-      app_identifier: "com.#{TEAMID}.com.#{TEAMID}.libre-direct",
+      app_identifier: "com.#{TEAMID}.libre-direct",
       api_key: api_key,
     )
 
@@ -55,13 +55,13 @@ platform :ios do
       type: "appstore",
       git_basic_authorization: Base64.strict_encode64("#{GITHUB_REPOSITORY_OWNER}:#{GH_PAT}"),
       app_identifier: [
-        "com.#{TEAMID}.com.#{TEAMID}.libre-direct",
-        "com.#{TEAMID}.com.#{TEAMID}.libre-direct.Widgets",
+        "com.#{TEAMID}.com.libre-direct",
+        "com.#{TEAMID}.libre-direct.Widgets",
       ]
     )
 
     previous_build_number = latest_testflight_build_number(
-      app_identifier: "com.#{TEAMID}.com.#{TEAMID}.libre-direct",
+      app_identifier: "com.#{TEAMID}.libre-direct",
       api_key: api_key,
     )
 
@@ -173,8 +173,8 @@ platform :ios do
       force: true,
       git_basic_authorization: Base64.strict_encode64("#{GITHUB_REPOSITORY_OWNER}:#{GH_PAT}"),
       app_identifier: [
-        "com.#{TEAMID}.com.#{TEAMID}.libre-direct",
-        "com.#{TEAMID}.com.#{TEAMID}.libre-direct.Widgets",
+        "com.#{TEAMID}.libre-direct",
+        "com.#{TEAMID}.libre-direct.Widgets",
 
       ]
     )
