@@ -21,8 +21,10 @@ jobs:
       contents: write
 
     steps:
-    - name: Select Xcode Version
-      run: "sudo xcode-select --switch /Applications/Xcode_15.4.app/Contents/Developer"
+    - name: Set up Xcode 16
+      uses: maxim-lobanov/setup-xcode@v1
+      with:
+        xcode-version: '16.0'
 
     - name: Checkout repository for building
       uses: actions/checkout@v4
