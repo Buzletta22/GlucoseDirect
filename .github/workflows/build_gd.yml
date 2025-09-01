@@ -16,10 +16,9 @@ on:
 
 jobs:
   build:
-    runs-on: macos-15
+    runs-on: macos-latest
     permissions:
       contents: write
-
     steps:
     - name: Select Xcode Version
       run: "sudo xcode-select --switch /Applications/Xcode_16.2.app/Contents/Developer"
