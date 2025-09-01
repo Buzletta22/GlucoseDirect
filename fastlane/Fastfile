@@ -100,6 +100,7 @@ platform :ios do
       configuration: "Release",
       destination: 'generic/platform=iOS',
       buildlog_path: 'buildlog'
+      xcargs: "DEPLOYMENT_TARGET=18.1"
     )
 
     copy_artifacts(
